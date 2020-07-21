@@ -1,0 +1,5 @@
+# Jenkins home folder
+jenkins_home
+
+#standard mac files
+.DS_Store
