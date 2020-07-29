@@ -28,7 +28,7 @@ Currently Lightsail does not feature a Docker blueprint, but that's not really a
 
    **Note**: To see contents of that script, please visit the github repository
 
-1. Choose the appropriate instance size. In this case, there's no reason to do anything more than the $5 size. 
+1. Choose the desired instance size.
 
 1. Optionally rename the instance.
 
@@ -39,10 +39,6 @@ Currently Lightsail does not feature a Docker blueprint, but that's not really a
    The shell script installs `docker` and `docker-compose`. It then copies over the Docker compose file. Next it copies in the systemd unit file, and registers it. This is the most reliable way to ensure the application runs automatically after a system restart. Finally, it starts the application via Docker Compose. 
 
 1. Once the instance is up and running you can navigate to its IP address to see the running site. 
-
-1. To ensure everything is working as expected click `Add task` in the top menu. Fill in the details and click `Add Task`.
-
-   You should now have that task listed. 
 
 1. Docker containers are ephemeral by default (meaning when a container reboots any changes made to the container are removed), but the Docker Compose file specified a persistent volume to use for the database data. 
 
